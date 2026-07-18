@@ -25,8 +25,8 @@ GAP = 3
 STEP = CELL + GAP
 TOP = 30           # room for month labels
 LEFT = 30          # room for weekday labels
-PALETTE = ["#1b2029", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
-CELL_STROKE = "#262c36"   # faint outline so the 53x7 grid reads even when empty
+PALETTE = ["#21272f", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+CELL_STROKE = "#30363d"   # outline so the 53x7 grid clearly reads even when empty
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 MONO = "SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace"
