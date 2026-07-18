@@ -36,9 +36,9 @@ ROWS = [
     ("Stack",      "SwiftUI · Firebase · Next.js · TS",       FG),
     ("Also",       "Remotion promos · design · marketing",    FG),
     ("Focus",      "Ship fast, validate, harden",             FG),
-    ("Highlights", "1v1 duels · virtual points · 0 real €",   YELL),
-    ("Location",   "Sant Cugat, Catalunya",                   FG),
-    ("Contact",    "boschwebs.website",                       PINK),
+    ("Highlights", "Self-learner · hard-worker · team player", YELL),
+    ("Location",   "Barcelona, Catalunya",                    FG),
+    ("Contact",    "https://boschwebs.website",               PINK),
 ]
 
 # ---- geometry --------------------------------------------------------------
