@@ -1,42 +1,7 @@
 {
   "username": "xavibosch",
-  "generated_at": "2026-07-18T14:34:26.759298+00:00",
+  "generated_at": "2026-07-19T08:33:33.405474+00:00",
   "days": [
-    {
-      "date": "2025-07-13",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-14",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-15",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-16",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-17",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-18",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-19",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-07-20",
       "count": 0,
@@ -1854,17 +1819,22 @@
     },
     {
       "date": "2026-07-18",
-      "count": 8,
+      "count": 9,
       "level": 4
+    },
+    {
+      "date": "2026-07-19",
+      "count": 0,
+      "level": 0
     }
   ],
   "stats": {
-    "total": 10,
+    "total": 11,
     "best_day": {
       "date": "2026-07-18",
-      "count": 8
+      "count": 9
     },
-    "current_streak": 1,
+    "current_streak": 0,
     "longest_streak": 1,
     "months": {
       "2025-07": 0,
@@ -1879,7 +1849,7 @@
       "2026-04": 0,
       "2026-05": 1,
       "2026-06": 0,
-      "2026-07": 8
+      "2026-07": 9
     }
   }
 }
