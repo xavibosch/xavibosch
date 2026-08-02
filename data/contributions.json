@@ -1,42 +1,7 @@
 {
   "username": "xavibosch",
-  "generated_at": "2026-08-01T08:34:18.324036+00:00",
+  "generated_at": "2026-08-02T08:37:05.969390+00:00",
   "days": [
-    {
-      "date": "2025-07-27",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-28",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-29",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-30",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-07-31",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-01",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-08-02",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-08-03",
       "count": 0,
@@ -955,7 +920,7 @@
     {
       "date": "2026-02-02",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-02-03",
@@ -1445,7 +1410,7 @@
     {
       "date": "2026-05-11",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-05-12",
@@ -1790,84 +1755,88 @@
     {
       "date": "2026-07-19",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-20",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-21",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-22",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-23",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-24",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-25",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-26",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-27",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-28",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-29",
       "count": 1,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-07-30",
       "count": 3,
-      "level": 4
+      "level": 3
     },
     {
       "date": "2026-07-31",
       "count": 2,
-      "level": 3
+      "level": 2
     },
     {
       "date": "2026-08-01",
+      "count": 5,
+      "level": 4
+    },
+    {
+      "date": "2026-08-02",
       "count": 2,
-      "level": 3
+      "level": 2
     }
   ],
   "stats": {
-    "total": 29,
+    "total": 34,
     "best_day": {
       "date": "2026-07-18",
       "count": 9
     },
-    "current_streak": 15,
-    "longest_streak": 15,
+    "current_streak": 16,
+    "longest_streak": 16,
     "months": {
-      "2025-07": 0,
       "2025-08": 0,
       "2025-09": 0,
       "2025-10": 0,
@@ -1880,7 +1849,7 @@
       "2026-05": 1,
       "2026-06": 0,
       "2026-07": 25,
-      "2026-08": 2
+      "2026-08": 7
     }
   }
 }
