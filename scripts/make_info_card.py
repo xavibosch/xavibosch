@@ -31,13 +31,13 @@ DIM = "#8b949e"
 
 ROWS = [
     ("Name",       "Xavi Bosch",                              CYAN),
-    ("Role",       "Solo founder · iOS & web dev",            FG),
-    ("Now",        "Building Betsy — social sports app",      GREEN),
-    ("Stack",      "SwiftUI · Firebase · Next.js · TS",       FG),
-    ("Also",       "Remotion promos · design · marketing",    FG),
-    ("Focus",      "Ship fast, validate, harden",             FG),
-    ("Highlights", "Self-learner · hard-worker · team player", YELL),
-    ("Location",   "Barcelona, Catalunya",                    FG),
+    ("Role",       "Interactive product design & dev",        FG),
+    ("Studying",   "DCPI, La Salle Barcelona · year 2",       FG),
+    ("Now",        "Jeffrey Desk · Betsy · Reps",             GREEN),
+    ("Stack",      "SwiftUI · TS · React · Python · Electron", FG),
+    ("Focus",      "Design the interaction, build it",        FG),
+    ("Open to",    "Internships from summer 2027",            YELL),
+    ("Location",   "Barcelona · or abroad",                   FG),
     ("Contact",    "https://boschwebs.website",               PINK),
 ]
 
