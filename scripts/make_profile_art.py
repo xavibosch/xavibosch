@@ -83,13 +83,13 @@ def header(theme):
     @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
     """
     grid = "".join(f'<line class="grid" x1="{x}" y1="0" x2="{x}" y2="{h}"/>' for x in range(0, w + 80, 40))
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Xavi Bosch, interactive product designer and developer">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Xavier Bosch, interactive product designer and developer">
 <style>{style}</style>
 <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".25" stop-color="#fff" stop-opacity="1"/><stop offset=".75" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <mask id="m"><rect width="{w}" height="{h}" fill="url(#fade)"/></mask></defs>
 <g mask="url(#m)"><g class="drift">{grid}</g></g>
 <g class="tile"><rect x="40" y="45" width="120" height="120" rx="30" fill="{ORANGE}"/><text x="58" y="124" class="mark">xb</text></g>
-<g class="rise"><text x="196" y="82" class="name">Xavi Bosch</text></g>
+<g class="rise"><text x="196" y="82" class="name">Xavier Bosch</text></g>
 <rect class="accent" x="196" y="94" width="56" height="3" rx="1.5" fill="{ORANGE}"/>
 {''.join(lines)}
 <g class="rise" style="animation-delay:.35s"><text x="196" y="168" class="meta">BARCELONA  /  DESIGN + CODE  /  OPEN TO INTERNSHIPS FROM JUNE 2027</text></g>

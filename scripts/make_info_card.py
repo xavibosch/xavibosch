@@ -30,7 +30,7 @@ FG = "#c9d1d9"
 DIM = "#8b949e"
 
 ROWS = [
-    ("Name",       "Xavi Bosch",                              CYAN),
+    ("Name",       "Xavier Bosch",                              CYAN),
     ("Role",       "Interactive product design & dev",        FG),
     ("Studying",   "DCPI, La Salle Barcelona · year 2",       FG),
     ("Now",        "Jeffrey Desk · Betsy · Reps",             GREEN),

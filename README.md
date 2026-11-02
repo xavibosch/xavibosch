@@ -2,12 +2,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-  <img src="./assets/header-light.svg" width="860" alt="Xavi Bosch, interactive product designer and developer">
+  <img src="./assets/header-light.svg" width="860" alt="Xavier Bosch, interactive product designer and developer">
 </picture>
 
 <p>
   <a href="https://boschwebs.website"><img src="https://img.shields.io/badge/Portfolio-boschwebs.website-f15c35?style=for-the-badge&labelColor=221e19" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/xavier-bosch-galilea-9b3876410"><img src="https://img.shields.io/badge/LinkedIn-Xavi_Bosch-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=221e19" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/xavier-bosch-galilea-9b3876410"><img src="https://img.shields.io/badge/LinkedIn-Xavier_Bosch-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=221e19" alt="LinkedIn"></a>
   <a href="mailto:bosch.xavii@gmail.com"><img src="https://img.shields.io/badge/Email-bosch.xavii%40gmail.com-555?style=for-the-badge&logo=gmail&logoColor=white&labelColor=221e19" alt="Email"></a>
 </p>
 <p>
