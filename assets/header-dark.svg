@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="Xavi Bosch, interactive product designer and developer">
+<style>
+    .name { font: 700 46px Georgia, 'Times New Roman', serif; fill: #e6edf3; letter-spacing: -1px; }
+    .role { font: 400 21px Georgia, 'Times New Roman', serif; font-style: italic; fill: #e6edf3; }
+    .meta { font: 600 11.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #8b949e; letter-spacing: 1.6px; }
+    .mark { font: italic 400 44px Georgia, 'Times New Roman', serif; fill: #221e19; }
+    .grid { stroke: #30363d; stroke-width: 1; opacity: .55; }
+    .drift { animation: drift 14s linear infinite; }
+    .accent { animation: grow 1.4s cubic-bezier(.22,1,.36,1) .2s both; transform-origin: 196px 0; }
+    .rise { animation: rise .9s cubic-bezier(.22,1,.36,1) both; }
+    .caret { animation: blink 1s steps(1) infinite; fill: #f15c35; }
+    .tile { animation: pop 1s cubic-bezier(.22,1.4,.36,1) both; transform-origin: 100px 100px; }
+    @keyframes drift { from { transform: translateX(0) } to { transform: translateX(-40px) } }
+    @keyframes grow { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+    @keyframes blink { 50% { opacity: 0 } }
+    @keyframes pop { from { transform: scale(.6) rotate(-8deg); opacity: 0 } to { transform: none; opacity: 1 } }
+    @keyframes type0 {0%,0.00% {width:0} 0.01% {width:0} 7.50% {width:560px} 24.00% {width:560px} 25.00%,100% {width:0}} @keyframes type1 {0%,25.00% {width:0} 25.01% {width:0} 32.50% {width:560px} 49.00% {width:560px} 50.00%,100% {width:0}} @keyframes type2 {0%,50.00% {width:0} 50.01% {width:0} 57.50% {width:560px} 74.00% {width:560px} 75.00%,100% {width:0}} @keyframes type3 {0%,75.00% {width:0} 75.01% {width:0} 82.50% {width:560px} 99.00% {width:560px} 100.00%,100% {width:0}}
+    .t0 { animation: type0 12.8s steps(44) infinite; } .t1 { animation: type1 12.8s steps(44) infinite; } .t2 { animation: type2 12.8s steps(44) infinite; } .t3 { animation: type3 12.8s steps(44) infinite; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .t0 { width: 560px; } }
+    </style>
+<defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".25" stop-color="#fff" stop-opacity="1"/><stop offset=".75" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="m"><rect width="860" height="210" fill="url(#fade)"/></mask><clipPath id="c0"><rect class="t0" x="196" y="104" height="36" width="0"/></clipPath><clipPath id="c1"><rect class="t1" x="196" y="104" height="36" width="0"/></clipPath><clipPath id="c2"><rect class="t2" x="196" y="104" height="36" width="0"/></clipPath><clipPath id="c3"><rect class="t3" x="196" y="104" height="36" width="0"/></clipPath></defs>
+<g mask="url(#m)"><g class="drift"><line class="grid" x1="0" y1="0" x2="0" y2="210"/><line class="grid" x1="40" y1="0" x2="40" y2="210"/><line class="grid" x1="80" y1="0" x2="80" y2="210"/><line class="grid" x1="120" y1="0" x2="120" y2="210"/><line class="grid" x1="160" y1="0" x2="160" y2="210"/><line class="grid" x1="200" y1="0" x2="200" y2="210"/><line class="grid" x1="240" y1="0" x2="240" y2="210"/><line class="grid" x1="280" y1="0" x2="280" y2="210"/><line class="grid" x1="320" y1="0" x2="320" y2="210"/><line class="grid" x1="360" y1="0" x2="360" y2="210"/><line class="grid" x1="400" y1="0" x2="400" y2="210"/><line class="grid" x1="440" y1="0" x2="440" y2="210"/><line class="grid" x1="480" y1="0" x2="480" y2="210"/><line class="grid" x1="520" y1="0" x2="520" y2="210"/><line class="grid" x1="560" y1="0" x2="560" y2="210"/><line class="grid" x1="600" y1="0" x2="600" y2="210"/><line class="grid" x1="640" y1="0" x2="640" y2="210"/><line class="grid" x1="680" y1="0" x2="680" y2="210"/><line class="grid" x1="720" y1="0" x2="720" y2="210"/><line class="grid" x1="760" y1="0" x2="760" y2="210"/><line class="grid" x1="800" y1="0" x2="800" y2="210"/><line class="grid" x1="840" y1="0" x2="840" y2="210"/><line class="grid" x1="880" y1="0" x2="880" y2="210"/><line class="grid" x1="920" y1="0" x2="920" y2="210"/></g></g>
+<g class="tile"><rect x="40" y="45" width="120" height="120" rx="30" fill="#f15c35"/><text x="58" y="124" class="mark">xb</text></g>
+<g class="rise"><text x="196" y="82" class="name">Xavi Bosch</text></g>
+<rect class="accent" x="196" y="94" width="56" height="3" rx="1.5" fill="#f15c35"/>
+<text x="196" y="130" clip-path="url(#c0)" class="role">Interactive product designer and developer.</text><text x="196" y="130" clip-path="url(#c1)" class="role">I design the interface,</text><text x="196" y="130" clip-path="url(#c2)" class="role">question the interaction,</text><text x="196" y="130" clip-path="url(#c3)" class="role">and build the working product.</text>
+<g class="rise" style="animation-delay:.35s"><text x="196" y="168" class="meta">BARCELONA  /  DESIGN + CODE  /  OPEN TO INTERNSHIPS FROM JUNE 2027</text></g>
+</svg>
