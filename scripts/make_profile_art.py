@@ -35,19 +35,34 @@ PHRASES = [
 def header(theme):
     t = THEMES[theme]
     w, h = 860, 210
-    step = 3.2  # seconds each phrase stays
+    step = 3.4  # seconds each phrase stays
     total = step * len(PHRASES)
-    lines, keyframes = [], []
+    full = 560
+    lines = []
     for i, phrase in enumerate(PHRASES):
-        start = i * step / total * 100
-        end = (i + 1) * step / total * 100
-        # Each phrase types in over a second, holds, then clears.
-        keyframes.append(
-            f"@keyframes type{i} {{0%,{start:.2f}% {{width:0}} {start + 0.01:.2f}% {{width:0}} "
-            f"{start + 30 / len(PHRASES):.2f}% {{width:560px}} {end - 1:.2f}% {{width:560px}} {end:.2f}%,100% {{width:0}}}}"
+        # SMIL, not CSS: Safari does not animate a rect's width from CSS, and
+        # without the clip every phrase showed at once. Each phrase is also
+        # hidden by opacity outside its slot, so even a renderer that ignores
+        # the clip never stacks them. With no animation at all, only the
+        # first phrase shows.
+        s0, s1 = i / len(PHRASES), (i + 1) / len(PHRASES)
+        typed = s0 + (s1 - s0) * .32
+        hold = s1 - .01
+        times = [0, s0, typed, hold, s1, 1]
+        widths = [0, 0, full, full, 0, 0]
+        shown = [0, 1, 1, 1, 0, 0]
+        pairs = sorted({t: (w, o) for t, w, o in zip(times, widths, shown)}.items())
+        kt = ";".join(f"{t:.4f}" for t, _ in pairs)
+        wv = ";".join(str(w) for _, (w, _) in pairs)
+        ov = ";".join(str(o) for _, (_, o) in pairs)
+        static_w = full if i == 0 else 0
+        lines.append(
+            f'<clipPath id="c{i}"><rect x="196" y="104" height="36" width="{static_w}">'
+            f'<animate attributeName="width" values="{wv}" keyTimes="{kt}" dur="{total}s" repeatCount="indefinite"/></rect></clipPath>'
         )
         lines.append(
-            f'<clipPath id="c{i}"><rect class="t{i}" x="196" y="104" height="36" width="0"/></clipPath>'
+            f'<text x="196" y="130" clip-path="url(#c{i})" class="role" opacity="{1 if i == 0 else 0}">{escape(phrase)}'
+            f'<animate attributeName="opacity" values="{ov}" keyTimes="{kt}" dur="{total}s" calcMode="discrete" repeatCount="indefinite"/></text>'
         )
     style = f"""
     .name {{ font: 700 46px {SERIF}; fill: {t['ink']}; letter-spacing: -1px; }}
@@ -65,20 +80,18 @@ def header(theme):
     @keyframes rise {{ from {{ opacity: 0; transform: translateY(10px) }} to {{ opacity: 1; transform: none }} }}
     @keyframes blink {{ 50% {{ opacity: 0 }} }}
     @keyframes pop {{ from {{ transform: scale(.6) rotate(-8deg); opacity: 0 }} to {{ transform: none; opacity: 1 }} }}
-    {' '.join(keyframes)}
-    {' '.join(f'.t{i} {{ animation: type{i} {total}s steps(44) infinite; }}' for i in range(len(PHRASES)))}
-    @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} .t0 {{ width: 560px; }} }}
+    @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
     """
     grid = "".join(f'<line class="grid" x1="{x}" y1="0" x2="{x}" y2="{h}"/>' for x in range(0, w + 80, 40))
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Xavi Bosch, interactive product designer and developer">
 <style>{style}</style>
 <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".25" stop-color="#fff" stop-opacity="1"/><stop offset=".75" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<mask id="m"><rect width="{w}" height="{h}" fill="url(#fade)"/></mask>{''.join(lines)}</defs>
+<mask id="m"><rect width="{w}" height="{h}" fill="url(#fade)"/></mask></defs>
 <g mask="url(#m)"><g class="drift">{grid}</g></g>
 <g class="tile"><rect x="40" y="45" width="120" height="120" rx="30" fill="{ORANGE}"/><text x="58" y="124" class="mark">xb</text></g>
 <g class="rise"><text x="196" y="82" class="name">Xavi Bosch</text></g>
 <rect class="accent" x="196" y="94" width="56" height="3" rx="1.5" fill="{ORANGE}"/>
-{''.join(f'<text x="196" y="130" clip-path="url(#c{i})" class="role">{escape(p)}</text>' for i, p in enumerate(PHRASES))}
+{''.join(lines)}
 <g class="rise" style="animation-delay:.35s"><text x="196" y="168" class="meta">BARCELONA  /  DESIGN + CODE  /  OPEN TO INTERNSHIPS FROM JUNE 2027</text></g>
 </svg>"""
 
